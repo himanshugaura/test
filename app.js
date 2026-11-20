@@ -1,10 +1,9 @@
-
 // Inventory Management System
 
 let inventory = [];
 
 function addProduct(id, name, quantity, price) {
-    let product = inventory.find(p => p.id === id);
+    const product = inventory.find(p => p.id === id);
 
     if (product) {
         console.log("Product ID already exists!");
